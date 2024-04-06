@@ -1,4 +1,4 @@
-import time, colorama, os, sys
+import time, os
 from pynput import keyboard
 from game_logic import *
 
