@@ -1,6 +1,6 @@
 import time, colorama, os, sys
 from pynput import keyboard
-from test_game.game_logic import *
+from game_logic import *
 
 key_pressed=dict()
 

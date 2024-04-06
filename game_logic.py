@@ -179,14 +179,15 @@ class Wall(Object):
     def __init__(self, w, h):
         self.w=w
         self.h=h
+        self.color=colorama.Fore.GREEN
 
     def draw(self, screen):
         for i in range(self.w):
             screen.set(i, 0, '!')
-            screen.set(i, self.h-1, "!")
+            screen.set(i, self.h-1, "!", self.color)
         for j in range(self.h):
             screen.set(0, j, "!")
-            screen.set(self.w-1, j, "!")
+            screen.set(self.w-1, j, "!", self.color)
         
 class Player(Object):
     def __init__(self, x, y):
