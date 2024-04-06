@@ -284,7 +284,7 @@ class Opponent(Object):
         self.speed=speed
 
     def draw(self, screen):
-        screen.set(self.x , self.y, self.shape)
+        screen.set(self.x , self.y, self.shape, colorama.Fore.RED)
             
     def run(self):
         self.x -=self.speed
