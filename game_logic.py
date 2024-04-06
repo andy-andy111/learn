@@ -183,10 +183,10 @@ class Wall(Object):
 
     def draw(self, screen):
         for i in range(self.w):
-            screen.set(i, 0, '!')
+            screen.set(i, 0, '!', self.color)
             screen.set(i, self.h-1, "!", self.color)
         for j in range(self.h):
-            screen.set(0, j, "!")
+            screen.set(0, j, "!", self.color)
             screen.set(self.w-1, j, "!", self.color)
         
 class Player(Object):
